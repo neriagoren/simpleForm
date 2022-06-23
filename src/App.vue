@@ -28,7 +28,7 @@ export default {
     <div class="simpleFormDiv">
       <form @submit="printObject">
         <div>
-          <h4> Gini Apps - user form </h4>
+          <h4 style="text-align:center"> Gini Apps - user form </h4>
         </div>
         <div class="formElement">
           <label> First name </label>
@@ -76,11 +76,13 @@ export default {
 
 <style>
 .simpleFormDiv {
-  background-color: lightgrey;
+  background-color: rgb(18, 175, 18);
+  color: white;
   width: 225px;
   padding: 10px;
   border-radius: 15px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
 
 .formElement {
