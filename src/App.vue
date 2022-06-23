@@ -24,12 +24,12 @@ export default {
     <title> Simple Form :) </title>
   </head>
   <main>
-    <div>
-      <h1> Gini Apps - user form </h1>
-    </div>
+
     <div class="simpleFormDiv">
       <form @submit="printObject">
-
+        <div>
+          <h4> Gini Apps - user form </h4>
+        </div>
         <div class="formElement">
           <label> First name </label>
           <input v-model="firstname" placeholder="Enter your first name: " pattern="[a-zA-Z]{2,12}" required />
@@ -75,6 +75,14 @@ export default {
 </template>
 
 <style>
+.simpleFormDiv {
+  background-color: lightgrey;
+  width: 225px;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .formElement {
   display: flex;
   flex-direction: column;
